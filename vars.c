@@ -59,7 +59,7 @@ void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 	}
 	if (info->cmd_buf_type == CMD_OR)
 	{
-if (!info->status)
+		if (!info->status)
 		{
 			buf[i] = 0;
 			j = len;
@@ -111,7 +111,7 @@ int replace_vars(info_t *info)
 
 	for (i = 0; info->argv[i]; i++)
 	{
-if (info->argv[i][0] != '$' || !info->argv[i][1])
+		if (info->argv[i][0] != '$' || !info->argv[i][1])
 			continue;
 
 		if (!_strcmp(info->argv[i], "$?"))

@@ -31,7 +31,7 @@ char **strtow(char *str, char *d)
 			i++;
 		k = 0;
 		while (!is_delim(str[i + k], d) && str[i + k])
-k++;
+		k++;
 		s[j] = malloc((k + 1) * sizeof(char));
 		if (!s[j])
 		{
